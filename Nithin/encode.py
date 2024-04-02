@@ -4,19 +4,19 @@ import numpy as np
 with open('Nithin/Encoders/standard_scaler.pkl', 'rb') as f:
   scaler = pickle.load(f)
 
-with open('Encoders/label_gender.pkl', 'rb') as file:
+with open('Nithin/Encoders/label_gender.pkl', 'rb') as file:
     label_gender = pickle.load(file)
 
-with open('Encoders/label_married.pkl', 'rb') as file:
+with open('Nithin/Encoders/label_married.pkl', 'rb') as file:
     label_married = pickle.load(file)
 
-with open('Encoders/label_work.pkl', 'rb') as file:
+with open('Nithin/Encoders/label_work.pkl', 'rb') as file:
     label_work = pickle.load(file)
 
-with open('Encoders/label_residence.pkl', 'rb') as file:
+with open('Nithin/Encoders/label_residence.pkl', 'rb') as file:
     label_residence = pickle.load(file)
 
-with open('Encoders/label_smoking.pkl', 'rb') as file:
+with open('Nithin/Encoders/label_smoking.pkl', 'rb') as file:
     label_smoking = pickle.load(file)
 
 print(label_work.transform(['Private']))
