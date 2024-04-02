@@ -3,12 +3,12 @@ import pickle
 from encode import encode
 import joblib
 
-with open("Models/knn_model.pkl", "rb") as f:
+with open("Nithin/Models/knn_model.pkl", "rb") as f:
   knn_model = pickle.load(f)
-with open('Models/dtree_model.pkl', 'rb') as f:
+with open('Nithin/Models/dtree_model.pkl', 'rb') as f:
   dtree_model = pickle.load(f)
-rfmodel = joblib.load('Models/ranfor_model.sav')
-xgmodel = joblib.load('Models/xgboost_model.pkl')
+rfmodel = joblib.load('Nithin/Models/ranfor_model.sav')
+xgmodel = joblib.load('Nithin/Models/xgboost_model.pkl')
 def main():
     st.title("Stroke Prediction")
 
