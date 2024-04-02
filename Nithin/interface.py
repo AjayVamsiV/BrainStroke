@@ -26,12 +26,19 @@ def main():
     # Add a button to trigger the prediction
     if st.button('Predict'):
         preprocessedData = encode(gender, age, hypertension, heart_disease, ever_married, work_type, Residence_type, glucose_level, bmi, smoking_status)
-        result = 1
-        result = dtree_model.predict(preprocessedData)[0]
+        pred1 = dtree_model.predict(preprocessedData)[0]
+        pred2 = rfmodel.predict(preprocessedData)[0]
+        pred3 = knn_model.predict(preprocessedData)[0]
+        pred4 = xgmodel.predict(preprocessedData)[0]
+        result = (pred1+pred2+pred3+pred4)/4
         print('output dtree',dtree_model.predict(preprocessedData))
         print('output rf',rfmodel.predict(preprocessedData))
         print('output knn',knn_model.predict(preprocessedData))
         print('output xgboost',xgmodel.predict(preprocessedData))
+        if(result<0.5):
+           st.success('No Stroke')
+        else:
+           st.warning('Has Stroke')
         
         st.success('The predicted output is {}'.format(result))
 
