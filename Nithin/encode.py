@@ -19,7 +19,6 @@ with open('Nithin/Encoders/label_residence.pkl', 'rb') as file:
 with open('Nithin/Encoders/label_smoking.pkl', 'rb') as file:
     label_smoking = pickle.load(file)
 
-print(label_work.transform(['Private']))
 
 def encode(gender, age, hypertension, heart_disease, ever_married, work_type, Residence_type, glucose_level, bmi, smoking_status):
     gender = label_gender.transform([gender])[0]
