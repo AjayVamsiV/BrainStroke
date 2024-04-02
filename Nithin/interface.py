@@ -39,8 +39,6 @@ def main():
            st.success('No Stroke')
         else:
            st.warning('Has Stroke')
-        
-        st.success('The predicted output is {}'.format(result))
 
 if __name__ == "__main__":
     main()
