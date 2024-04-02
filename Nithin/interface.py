@@ -3,11 +3,6 @@ import pickle
 from encode import encode
 import joblib
 
-
-div[data-baseweb="select"] ul li:hover {
-        background-color: #f7b2a5;  /* change to desired bar color */
-        color: white;  /* change to desired text color */
-    }
 with open("Nithin/Models/knn_model.pkl", "rb") as f:
   knn_model = pickle.load(f)
 with open('Nithin/Models/dtree_model.pkl', 'rb') as f:
