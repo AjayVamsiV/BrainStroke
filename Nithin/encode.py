@@ -1,7 +1,7 @@
 import pickle
 import numpy as np
     
-with open('Encoders/standard_scaler.pkl', 'rb') as f:
+with open('Nithin/Encoders/standard_scaler.pkl', 'rb') as f:
   scaler = pickle.load(f)
 
 with open('Encoders/label_gender.pkl', 'rb') as file:
