@@ -1,0 +1,10 @@
+data_cat = data[['gender', 'hypertension', 'heart_disease', 'ever_married','work_type', 'Residence_type', 
+                 'smoking_status', 'stroke']]
+['Male' 'Female']
+[0 1]
+[1 0]
+['Yes' 'No']
+['Private' 'Self-employed' 'Govt_job' 'children']
+['Urban' 'Rural']
+['formerly smoked' 'never smoked' 'smokes' 'Unknown']
+[1 0]
