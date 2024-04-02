@@ -38,7 +38,7 @@ def main():
         if(result<0.5):
            st.success('No Stroke')
         else:
-           st.warning('Has Stroke')
+           st.error('Has Stroke')
 
 if __name__ == "__main__":
     main()
